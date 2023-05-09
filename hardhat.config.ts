@@ -126,6 +126,11 @@ const config: HardhatUserConfig = {
       url: 'http://localhost:8545',
       chainId: 31337,
     },
+    zkevmdatafundtestnet: {
+      url: PRIVATE_RPC_MAINNET ? PRIVATE_RPC_MAINNET : 'http://zkevm.dev.datafund.io:8123',
+      accounts,
+      chainId: 1001,
+    },
     testnet: {
       url: PRIVATE_RPC_TESTNET ? PRIVATE_RPC_TESTNET : 'https://rpc2.sepolia.org',
       accounts,
